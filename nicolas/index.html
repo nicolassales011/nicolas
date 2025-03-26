@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Programação</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+ 
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+ 
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+ 
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+ 
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            text-align: left;
+        }
+ 
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+ 
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+ 
+        .checkbox-group {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+ 
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background 0.3s;
+        }
+ 
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+ 
+<div class="container">
+    <h2>Formulário sobre Programação</h2>
+    <form action="#" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+ 
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+ 
+        <label for="linguagem">Linguagem favorita:</label>
+        <select id="linguagem" name="linguagem" required>
+            <option value="">Selecione...</option>
+            <option value="Python">Python</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Java">Java</option>
+            <option value="C++">C++</option>
+            <option value="Outros">Outros</option>
+        </select>
+ 
+        <label for="experiencia">Nível de experiência:</label>
+        <select id="experiencia" name="experiencia" required>
+            <option value="">Selecione...</option>
+            <option value="Iniciante">Iniciante</option>
+            <option value="Intermediário">Intermediário</option>
+            <option value="Avançado">Avançado</option>
+        </select>
+ 
+        <label>Áreas de interesse:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" id="desenvolvimento_web" name="interesses" value="Desenvolvimento Web">
+            <label for="desenvolvimento_web">Desenvolvimento Web</label><br>
+ 
+            <input type="checkbox" id="cientifica" name="interesses" value="Computação Científica">
+            <label for="cientifica">Computação Científica</label><br>
+ 
+            <input type="checkbox" id="mobile" name="interesses" value="Desenvolvimento Mobile">
+            <label for="mobile">Desenvolvimento Mobile</label><br>
+ 
+            <input type="checkbox" id="ia" name="interesses" value="Inteligência Artificial">
+            <label for="ia">Inteligência Artificial</label>
+        </div>
+ 
+        <label for="feedback">Comentários ou sugestões:</label>
+        <textarea id="feedback" name="feedback" rows="4" placeholder="Digite aqui..."></textarea>
+ 
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+ 
+</body>
+</html>
